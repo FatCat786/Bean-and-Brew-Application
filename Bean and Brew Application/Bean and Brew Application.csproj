@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Bean_and_Brew_Application</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1014393.png" />
+    <None Remove="3541632-200.png" />
+    <None Remove="5390613.png" />
+    <None Remove="869698.png" />
+    <None Remove="About_Us.png" />
+    <None Remove="B&amp;B+Logo+Font_Green+Text.jpg" />
+    <None Remove="BroughCoffee.jpg" />
+    <None Remove="Checkout.png" />
+    <None Remove="Happy-Person-Free-Download-PNG.png" />
+    <None Remove="HarrogateCoffee.jpg" />
+    <None Remove="LeedsCoffee.jpg" />
+    <None Remove="Location.png" />
+    <None Remove="OrderNow.png" />
+    <None Remove="PromoCoffee1.png" />
+    <None Remove="PromoCoffee2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1014393.png" />
+    <Resource Include="3541632-200.png" />
+    <Resource Include="5390613.png" />
+    <Resource Include="869698.png" />
+    <Resource Include="About_Us.png" />
+    <Resource Include="B&amp;B+Logo+Font_Green+Text.jpg" />
+    <Resource Include="BroughCoffee.jpg" />
+    <Resource Include="Checkout.png" />
+    <Resource Include="Happy-Person-Free-Download-PNG.png" />
+    <Resource Include="HarrogateCoffee.jpg" />
+    <Resource Include="LeedsCoffee.jpg" />
+    <Resource Include="Location.png" />
+    <Resource Include="OrderNow.png" />
+    <Resource Include="PromoCoffee1.png" />
+    <Resource Include="PromoCoffee2.png" />
+  </ItemGroup>
+
+</Project>

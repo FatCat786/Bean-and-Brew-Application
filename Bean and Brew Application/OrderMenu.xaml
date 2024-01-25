@@ -1,0 +1,64 @@
+﻿<Window x:Class="Bean_and_Brew_Application.OrderMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bean_and_Brew_Application"
+        mc:Ignorable="d"
+        ResizeMode="NoResize" 
+        Title="OrderMenu" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Rectangle Stroke="White" Margin="0,2,0,382" Grid.RowSpan="2" />
+        <Rectangle HorizontalAlignment="Stretch"  Grid.Row="1" Stroke="#FFB57221" VerticalAlignment="Stretch" Fill="#FFB57221"/>
+        <Image Margin="1,0,729,0" Source="/5390613.png"/>
+        <Button Name="BnB_Btn" Click="OnImageButtonClick" Margin="50,4,570,0" Background="{x:Null}" BorderBrush="{x:Null}" >
+
+            <Image Source="/B&amp;B+Logo+Font_Green+Text.jpg" Height="49" Width="138"></Image>
+        </Button>
+
+        <Button Name="Coffee_Menu" Click="CoffeeButtonClick" Margin="566,7,185,7" Background="{x:Null}" BorderBrush="{x:Null}" >
+
+            <Image Source="/1014393.png" Height="30" Width="39"></Image>
+        </Button>
+
+        <Button Name="Location_Menu" Click="LocationButtonClick" Margin="620,7,131,7" Background="{x:Null}" BorderBrush="{x:Null}" >
+
+            <Image Source="/Location.png" Height="30" Width="39"></Image>
+        </Button>
+
+        <Button Name="AboutUs_Menu" Click="AbooutUsButtonClick" Margin="678,7,73,7" Background="{x:Null}" BorderBrush="{x:Null}" >
+
+            <Image Source="/About_Us.png" Height="30" Width="39"></Image>
+        </Button>
+        <Image Source="/3541632-200.png" Margin="745,4,5,7"/>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="209" Margin="22,0,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="181"/>
+        <Label Name="PriceLbl" FontSize="15" Content="Price:N/A" HorizontalAlignment="Left" Margin="22,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="94"/>
+        <Button Content="CheckOut" HorizontalAlignment="Left" Margin="140,147,0,0" Grid.Row="1" VerticalAlignment="Top" Click="CheckOutButton_Click"/>
+        <Image Margin="22,2,702,330" Grid.Row="1" Source="/Checkout.png"/>
+        <Label Content="CheckOut" HorizontalAlignment="Left" Margin="77,7,0,0" Grid.Row="1" FontSize="25" VerticalAlignment="Top" Height="39" Width="126"/>
+        <TextBox Name="CustomerNameTxt" HorizontalAlignment="Left" Margin="77,94,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="CustomerAddressTxt" HorizontalAlignment="Left" Margin="77,117,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Width="152"><Run Text="Order stat"/><Run Language="en-gb" Text="us"/></TextBlock>
+        <Image Margin="521,3,208,330" Grid.Row="1" Source="/869698.png"/>
+        <Label Name="DeliveryNameLbl" Content="Name:N/A" HorizontalAlignment="Left" Margin="531,66,0,0" Grid.Row="1" VerticalAlignment="Top" Width="125"/>
+        <Label Name="DeliveryAddressLbl" Content="Address:N/A" HorizontalAlignment="Left" Margin="531,94,0,0" Grid.Row="1" VerticalAlignment="Top" Width="125"/>
+        <Label Name="CheckoutNameLbl" Content="Name:" HorizontalAlignment="Left" Margin="34,92,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Name="CheckoutAddressLbl" Content="Address:" HorizontalAlignment="Left" Margin="23,109,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Rectangle Stroke="Black" Margin="531,3,65,109" Grid.Row="1"/>
+        <Label Name="DeliveryStatus" Content="Delivery:" HorizontalAlignment="Left" Margin="531,121,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button Name="CancelOrderBtn" Content="Cancel Order" HorizontalAlignment="Left" Margin="536,172,0,0" Grid.Row="1" VerticalAlignment="Top" Width="73" Click="CancelOrderBtn_Click"/>
+        <ComboBox Name="RemoveCoffee" HorizontalAlignment="Left" Margin="242,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+        <Button Name="UpdateBtn" Content="Price" HorizontalAlignment="Center" Margin="0,19,0,0" Grid.Row="1" VerticalAlignment="Top" Click="UpdateBtn_Click"/>
+        <Button Name="RemoveCoffeeBtn" Content="Remove Coffee" HorizontalAlignment="Left" Margin="420,20,0,0" Grid.Row="1" VerticalAlignment="Top" Click="RemoveCoffeeBtn_Click"/>
+        <TextBox Name="OrderIDTxt" HorizontalAlignment="Left" Margin="536,149,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Name="OrderIDLbl" Content="Label" HorizontalAlignment="Left" Margin="678,144,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

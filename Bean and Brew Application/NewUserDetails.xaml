@@ -1,0 +1,32 @@
+﻿<Window x:Class="Bean_and_Brew_Application.NewUserDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        ResizeMode="NoResize"
+        xmlns:local="clr-namespace:Bean_and_Brew_Application"
+        mc:Ignorable="d"
+        Title="NewUserDetails" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="381*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Stroke="#FFB57221" Fill="#FFB57221" Margin="0,50,0,0" Grid.RowSpan="2"/>
+        <Image Source="/B&amp;B+Logo+Font_Green+Text.jpg" Margin="180,0,180,4"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,7,0,0" TextWrapping="Wrap" Text="Create a User" VerticalAlignment="Top" FontSize="22" Grid.Row="1"/>
+
+        <TextBox Name="CreateFirstNameTxt" HorizontalAlignment="Left" Margin="93,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" Height="22" Grid.Row="1"/>
+        <TextBox Name="CreateLastNameTxt" HorizontalAlignment="Left" Margin="93,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" Height="22" Grid.Row="1"/>
+        <TextBox Name="CreatePhoneNumber" HorizontalAlignment="Left" Margin="93,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" Height="22" Grid.Row="1"/>
+        <TextBox Name="CreateEmail" HorizontalAlignment="Left" Margin="93,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" Height="22" Grid.Row="1"/>
+        <Label Content="Firstname:" HorizontalAlignment="Left" Margin="20,52,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Lastname:" HorizontalAlignment="Left" Margin="22,78,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="PhoneNumber:" HorizontalAlignment="Left" Margin="-3,104,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Email Address:" HorizontalAlignment="Left" Margin="1,133,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="100,164,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click" Grid.Row="1" />
+
+    </Grid>
+</Window>
